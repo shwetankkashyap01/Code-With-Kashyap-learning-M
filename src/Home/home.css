@@ -1,0 +1,181 @@
+.hero_section{
+  display: flex;
+  justify-content: space-between;
+  min-height: 70vh;
+  padding-top: 2rem;
+}
+
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+}
+
+
+
+.hero_text{
+  margin: auto;
+}
+.hero_title{
+  font-size: clamp(1rem,3.5vw,4rem);
+  font-weight: 900;
+}
+
+.hero_description{
+      color: #B2B7BF;
+      margin-top: 1.5rem;
+
+}
+
+.hero_image{
+  width: 80%;
+  margin: auto;
+}
+
+.hero_image > img{
+  width: 100%;
+}
+
+.services{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+}
+.services > div{
+  width: 300px;
+  font-weight:  600;
+  font-size: 1.2rem;
+}
+/* .box1{
+  background: #EF4444;
+  padding: 2rem;
+  margin: auto;
+  transition-delay: 200ms !important;
+} */
+/* .box2{
+  background: #22C55E;
+  padding: 2rem;
+  margin: auto;
+  transition-delay: 400ms !important;
+} */
+/* .box3{
+  background: rgb(236 72 153);
+  padding: 2rem;
+  margin: auto;
+  transition-delay: 600ms !important;
+} */
+/* .box4{
+  background: #A855F7;
+  padding: 2rem;
+  margin: auto;
+  transition-delay: 800ms !important;
+} */
+
+.seminar_card{
+  background: #2A2E35;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  width: 100%;
+  min-height: 600px;
+  margin-bottom: 2rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  
+}
+
+.seminar_image{
+  position: relative;
+  width: 500px;
+  margin: auto;
+  
+}
+
+.seminar_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.seminar_button{
+  margin-top: 2rem;
+  margin-left: 0.2rem;
+  text-align: center;
+}
+
+.seminar_image > img{
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+@media (max-width: 1650px){
+    .services{
+   grid-template-columns: repeat(2,1fr);
+
+  }
+}
+@media (max-width: 1400px) {
+  .courses {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+}
+@media (max-width: 1200px) {
+  .seminar_card{
+  grid-template-columns: 1fr;
+  }
+  .seminar_image{
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 992px){
+  .courses {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  
+  .services{
+    grid-template-columns: repeat(1,1fr);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+}
+
+@media (max-width: 768px){
+  .hero_section{
+    flex-direction: column-reverse;
+  } 
+  .hero_image{
+    width: 100%;
+  }
+  .hero_text{
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+
+.hero_description{
+      font-size:  clamp(0.7rem,1.1vw,2rem);
+      margin-top: 0 !important;
+
+}
+  .courses {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
+

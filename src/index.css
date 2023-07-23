@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: lightgrey;
+  color: #e4e6eb;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(lightskyblue);
+  background-attachment: fixed;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text_yellow_gradient {
+  background: -webkit-linear-gradient(black, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text_pink {
+  color: rgb(236 72 153);
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(-0%);
+}
+
+.home_title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.4vw, 2.5rem);
+  cursor: pointer;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a2e35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a9c4a;
+}
+
+@media (prefers-redced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

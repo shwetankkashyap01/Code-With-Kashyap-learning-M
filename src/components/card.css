@@ -1,0 +1,34 @@
+.card {
+  border: 1px solid black;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: black;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+  margin: auto;
+}
+
+.card_image {
+  width: 100%;
+}
+
+.card_info {
+  padding: 1rem;
+}
+
+.card_info > .price {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 0.2rem;
+}
+
+.card_footer {
+  float: right;
+  padding: 1.5rem 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

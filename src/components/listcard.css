@@ -1,0 +1,15 @@
+.list_card {
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+}
+
+.info > p{
+    color: #B2B7BF;
+    font-size: 0.9rem;
+}
